@@ -27,7 +27,7 @@ LANGUAGES = {
     "Tiếng Việt": "vietnamese"
 }
 
-st.title("🌏 多語單字練習系統")
+st.title("🌏 多語單字練習系統(食物篇)")
 
 # 選擇目標語言
 target_lang_label = st.selectbox("你想要練習哪個語言？", list(LANGUAGES.keys()))
