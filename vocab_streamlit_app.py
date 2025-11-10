@@ -17,14 +17,15 @@ if 'current_question' not in st.session_state:
     st.session_state.show_result = False
 
 # 讀取單字表
-df = pd.read_excel("en_cn_vn.xlsx")
+df = pd.read_excel("en_cn_vn_fr.xlsx")
 df.columns = df.columns.str.lower()
 df = df.dropna()
 
 LANGUAGES = {
     "English": "english",
     "中文": "chinese",
-    "Tiếng Việt": "vietnamese"
+    "Tiếng Việt": "vietnamese",
+    "French": "français"
 }
 
 st.title("🌏 多語單字練習系統(食物篇)")
